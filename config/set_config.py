@@ -13,7 +13,7 @@
 #                                                                     #
 #######################################################################
 CONFIG_DATE='2013-10-30 04:29:41.749820'
-METASPLOIT_PATH="/opt/metasploit/apps/pro/msf3"
+METASPLOIT_PATH="/usr/local/share/metasploit-framework"
 METASPLOIT_DATABASE="postgresql"
 ENCOUNT=4
 AUTO_MIGRATE=False
