@@ -51,8 +51,8 @@ if platform.system() == "Linux":
         print "[*] Installing SET into the /usr/local/share/setoolkit folder through git..."		
         subprocess.Popen("git clone https://github.com/pr4jwal/social-engineer-toolkit /usr/local/share/setoolkit", shell=True).wait()
         print "[*] Installing setoolkit installer to /usr/bin/setoolkit..."
-        subprocess.Popen("cp /usr/local/share/setoolkit/setoolkit /usr/bin", shell=True).wait()
-        subprocess.Popen("cp /usr/local/share/setoolkit/set-update /usr/bin/", shell=True).wait()
+        subprocess.Popen("cp /usr/local/share/setoolkit/setoolkit /usr/bin/", shell=True).wait()
+        subprocess.Popen("cp /usr/local/share/setoolkit/seupdate /usr/bin/", shell=True).wait()
         subprocess.Popen("chmod +x /usr/bin/setoolkit", shell=True).wait()
         print "[*] Note you will manually need to install Core Security 'Impacket'"
         print "[*] Download link: http://corelabs.coresecurity.com/index.php?module=Wiki&action=view&type=tool&name=Impacket"
