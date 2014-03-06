@@ -49,7 +49,7 @@ if platform.system() == "Linux":
             sys.exit()
 
         print "[*] Installing SET into the /usr/local/share/setoolkit folder through git..."		
-        subprocess.Popen("git clone https://github.com/trustedsec/social-engineer-toolkit /usr/local/share/setoolkit", shell=True).wait()
+        subprocess.Popen("git clone https://github.com/pr4jwal/social-engineer-toolkit /usr/local/share/setoolkit", shell=True).wait()
         print "[*] Installing setoolkit installer to /usr/bin/setoolkit..."
         subprocess.Popen("cp /usr/local/share/setoolkit/setoolkit /usr/bin", shell=True).wait()
         subprocess.Popen("cp /usr/local/share/setoolkit/set-update /usr/bin/", shell=True).wait()
