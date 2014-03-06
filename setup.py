@@ -39,8 +39,8 @@ if platform.system() == "Linux":
             print "[!] Install git, python-pexpect, python-crypto, python-openssl, python-pefile manually for all of SET dependancies."
             sys.exit()
 
-        if os.path.isdir("/usr/share/setoolkit"):
-            print "[!] SET is already installed in /usr/share/setoolkit, remove and start again."
+        if os.path.isdir("/usr/local/share/setoolkit"):
+            print "[!] SET is already installed in /usr/local/share/setoolkit, remove and start again."
             sys.exit()
 
         if not os.path.isfile("/usr/bin/git"):
@@ -48,11 +48,11 @@ if platform.system() == "Linux":
             print "[!] Install GIT and run the installer again."
             sys.exit()
 
-        print "[*] Installing SET into the /usr/share/setoolkit folder through git..."		
-        subprocess.Popen("git clone https://github.com/trustedsec/social-engineer-toolkit /usr/share/setoolkit", shell=True).wait()
+        print "[*] Installing SET into the /usr/local/share/setoolkit folder through git..."		
+        subprocess.Popen("git clone https://github.com/trustedsec/social-engineer-toolkit /usr/local/share/setoolkit", shell=True).wait()
         print "[*] Installing setoolkit installer to /usr/bin/setoolkit..."
-        subprocess.Popen("cp /usr/share/setoolkit/setoolkit /usr/bin", shell=True).wait()
-        subprocess.Popen("cp /usr/share/setoolkit/set-update /usr/bin/", shell=True).wait()
+        subprocess.Popen("cp /usr/local/share/setoolkit/setoolkit /usr/bin", shell=True).wait()
+        subprocess.Popen("cp /usr/local/share/setoolkit/set-update /usr/bin/", shell=True).wait()
         subprocess.Popen("chmod +x /usr/bin/setoolkit", shell=True).wait()
         print "[*] Note you will manually need to install Core Security 'Impacket'"
         print "[*] Download link: http://corelabs.coresecurity.com/index.php?module=Wiki&action=view&type=tool&name=Impacket"
